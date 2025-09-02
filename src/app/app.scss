@@ -1,0 +1,21 @@
+:root {
+  --bg: #0b0f1a;
+  --card: #111827;
+  --line: #1f2937;
+  --text: #e5e7eb;
+}
+* { box-sizing: border-box; color: var(--text); }
+body, html { margin:0; background: var(--bg); font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial; }
+
+.wrap { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+
+.top { position: sticky; top:0; z-index:10; backdrop-filter: blur(8px);
+  background: rgba(11,15,26,.7); border-bottom:1px solid var(--line);
+}
+.top h1 { margin: 0; padding: .9rem 0; font-size: 1.5rem; }
+
+.layout { display:grid; grid-template-columns: 1fr 320px; gap: 16px; padding: 16px 0; }
+.sidebar .sticky { position: sticky; top: 86px; }
+
+.footer { border-top:1px solid var(--line); padding: 16px; text-align:center; opacity:.8; }
+.header-ad { display:flex; justify-content:center; padding-bottom: 8px; }

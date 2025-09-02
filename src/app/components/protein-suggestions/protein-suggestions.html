@@ -1,0 +1,26 @@
+<div class="card">
+  <h3>Ideas para llegar a tu proteína</h3>
+  <p class="hint">Consejo: prioriza 1.6–2.2 g/kg/día. Divide tu objetivo en 3–5 comidas.</p>
+
+  <div class="meals">
+    <div class="meal" *ngFor="let m of split">
+      <strong>{{ m.meal }}</strong>
+      <span>{{ m.suggestion }}</span>
+      <small>{{ m.tip }}</small>
+    </div>
+  </div>
+
+  <h4>Fuentes altas en proteína (aprox/100 g)</h4>
+  <div class="foods">
+    <div class="food" *ngFor="let f of foods">
+      <span>{{ f.name }}</span>
+      <strong>{{ f.protein }} g</strong>
+      <small>{{ f.notes }}</small>
+    </div>
+  </div>
+
+  <!-- In-content ad al final del módulo de proteína -->
+  <div class="ad-block">
+    <app-ad-slot adSlot="IN_CONTENT_PROTEIN_SLOT_ID"></app-ad-slot>
+  </div>
+</div>

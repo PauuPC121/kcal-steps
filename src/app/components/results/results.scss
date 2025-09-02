@@ -1,0 +1,11 @@
+.card {
+  background: var(--card);
+  padding: 1rem 1.25rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.06);
+}
+.rows { display:grid; gap:.5rem; }
+.rows div { display:flex; align-items:center; justify-content:space-between; }
+.total strong { color:#0f766e; }
+.target strong { color:#2563eb; }
+.ad-side { margin-top: 12px; display: flex; justify-content: center; }

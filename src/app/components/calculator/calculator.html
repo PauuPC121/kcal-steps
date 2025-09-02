@@ -1,0 +1,68 @@
+<div class="card">
+  <h2>Calculadora de Kcal con Pasos</h2>
+  <form (ngSubmit)="submit()" [formGroup]="form">
+    <div class="grid">
+      <label>Sexo
+        <select formControlName="sex">
+          <option value="male">Hombre</option>
+          <option value="female">Mujer</option>
+        </select>
+      </label>
+
+      <label>Edad
+        <input type="number" formControlName="age">
+      </label>
+
+      <label>Altura (cm)
+        <input type="number" formControlName="heightCm">
+      </label>
+
+      <label>Peso (kg)
+        <input type="number" formControlName="weightKg">
+      </label>
+
+      <label>Pasos diarios
+        <input type="number" formControlName="steps">
+      </label>
+
+      <label>Intensidad de pasos
+        <select formControlName="stepIntensity">
+          <option value="normal">Normal (ciudad)</option>
+          <option value="rapido">Rápido</option>
+          <option value="senderismo">Senderismo</option>
+        </select>
+      </label>
+
+      <label>Factor de actividad (sin paseos)
+        <select formControlName="activityFactor">
+          <option [value]="1.2">Sedentario (1.2)</option>
+          <option [value]="1.375">Ligero (1.375)</option>
+          <option [value]="1.55">Moderado (1.55)</option>
+          <option [value]="1.725">Alto (1.725)</option>
+          <option [value]="1.9">Extremo (1.9)</option>
+        </select>
+      </label>
+
+      <label>Objetivo
+        <select formControlName="goal">
+          <option value="deficit">Déficit</option>
+          <option value="mantenimiento">Mantenimiento</option>
+          <option value="superavit">Superávit</option>
+        </select>
+      </label>
+
+      <label *ngIf="showDelta">Ajuste kcal/día (+/-)
+        <input type="number" formControlName="goalKcal" placeholder="p.ej. 300">
+      </label>
+    </div>
+
+    <button type="submit">Calcular</button>
+  </form>
+</div>
+
+<!-- In-article ad (entre calculadora y resultados) -->
+<div class="ad-block">
+  <app-ad-slot adSlot="IN_ARTICLE_SLOT_ID"></app-ad-slot>
+</div>
+
+<app-results *ngIf="results" [data]="results"></app-results>

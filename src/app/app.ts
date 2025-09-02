@@ -1,11 +1,14 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { CalculatorComponent } from './components/calculator/calculator';
 
 @Component({
-  selector: 'app-root',
-  imports: [],
+  selector: 'app-root',                        // <-- debe coincidir con index.html
+  standalone: true,
+  imports: [CommonModule, CalculatorComponent],
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrls: ['./app.scss']
 })
 export class App {
-  protected readonly title = signal('kcal-steps');
+  year = new Date().getFullYear();
 }

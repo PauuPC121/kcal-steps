@@ -1,0 +1,26 @@
+.card {
+  background: var(--card);
+  padding: 1.25rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: .75rem;
+}
+
+label { display:flex; flex-direction:column; gap:.35rem; font-weight:600; }
+input, select {
+  padding:.6rem .7rem;
+  border-radius:12px;
+  border:1px solid var(--line);
+  background: var(--bg);
+}
+button {
+  margin-top: .8rem;
+  padding:.75rem 1rem; border:none; border-radius:12px; font-weight:700;
+  background: #4f46e5; color:white; cursor:pointer;
+}
+.ad-block { margin: 16px 0; display:flex; justify-content:center; }
