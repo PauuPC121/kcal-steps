@@ -1,62 +1,63 @@
 <div class="card">
-  <h2>Calculadora de Kcal con Pasos</h2>
+  <h2>{{ 'CALC.TITLE' | translate }}</h2>
+
   <form (ngSubmit)="submit()" [formGroup]="form">
     <div class="grid">
-      <label>Sexo
-        <select formControlName="sex">
-          <option value="male">Hombre</option>
-          <option value="female">Mujer</option>
+      <label>{{ 'CALC.SEX' | translate }}
+        <select formControlName="sex" aria-label="{{ 'CALC.SEX' | translate }}">
+          <option value="male">{{ 'CALC.SEX_MALE' | translate }}</option>
+          <option value="female">{{ 'CALC.SEX_FEMALE' | translate }}</option>
         </select>
       </label>
 
-      <label>Edad
-        <input type="number" formControlName="age">
+      <label>{{ 'CALC.AGE' | translate }}
+        <input type="number" formControlName="age" placeholder="{{ 'CALC.AGE_PH' | translate }}">
       </label>
 
-      <label>Altura (cm)
-        <input type="number" formControlName="heightCm">
+      <label>{{ 'CALC.HEIGHT' | translate }}
+        <input type="number" formControlName="heightCm" placeholder="{{ 'CALC.HEIGHT_PH' | translate }}">
       </label>
 
-      <label>Peso (kg)
-        <input type="number" formControlName="weightKg">
+      <label>{{ 'CALC.WEIGHT' | translate }}
+        <input type="number" formControlName="weightKg" placeholder="{{ 'CALC.WEIGHT_PH' | translate }}">
       </label>
 
-      <label>Pasos diarios
-        <input type="number" formControlName="steps">
+      <label>{{ 'CALC.STEPS' | translate }}
+        <input type="number" formControlName="steps" placeholder="{{ 'CALC.STEPS_PH' | translate }}">
       </label>
 
-      <label>Intensidad de pasos
-        <select formControlName="stepIntensity">
-          <option value="normal">Normal (ciudad)</option>
-          <option value="rapido">Rápido</option>
-          <option value="senderismo">Senderismo</option>
+      <label>{{ 'CALC.STEP_INTENSITY' | translate }}
+        <select formControlName="stepIntensity" aria-label="{{ 'CALC.STEP_INTENSITY' | translate }}">
+          <option value="normal">{{ 'CALC.INTENSITY_NORMAL' | translate }}</option>
+          <option value="rapido">{{ 'CALC.INTENSITY_FAST' | translate }}</option>
+          <option value="senderismo">{{ 'CALC.INTENSITY_HIKE' | translate }}</option>
         </select>
       </label>
 
-      <label>Factor de actividad (sin paseos)
-        <select formControlName="activityFactor">
-          <option [value]="1.2">Sedentario (1.2)</option>
-          <option [value]="1.375">Ligero (1.375)</option>
-          <option [value]="1.55">Moderado (1.55)</option>
-          <option [value]="1.725">Alto (1.725)</option>
-          <option [value]="1.9">Extremo (1.9)</option>
+      <label>{{ 'CALC.ACTIVITY_FACTOR' | translate }}
+        <select formControlName="activityFactor" aria-label="{{ 'CALC.ACTIVITY_FACTOR' | translate }}">
+          <option [value]="1.2">{{ 'CALC.ACT_SED' | translate }} (1.2)</option>
+          <option [value]="1.375">{{ 'CALC.ACT_LIGHT' | translate }} (1.375)</option>
+          <option [value]="1.55">{{ 'CALC.ACT_MOD' | translate }} (1.55)</option>
+          <option [value]="1.725">{{ 'CALC.ACT_HIGH' | translate }} (1.725)</option>
+          <option [value]="1.9">{{ 'CALC.ACT_EXT' | translate }} (1.9)</option>
         </select>
       </label>
 
-      <label>Objetivo
-        <select formControlName="goal">
-          <option value="deficit">Déficit</option>
-          <option value="mantenimiento">Mantenimiento</option>
-          <option value="superavit">Superávit</option>
+      <label>{{ 'CALC.GOAL' | translate }}
+        <select formControlName="goal" aria-label="{{ 'CALC.GOAL' | translate }}">
+          <option value="deficit">{{ 'CALC.GOAL_DEF' | translate }}</option>
+          <option value="mantenimiento">{{ 'CALC.GOAL_MAINT' | translate }}</option>
+          <option value="superavit">{{ 'CALC.GOAL_SUR' | translate }}</option>
         </select>
       </label>
 
-      <label *ngIf="showDelta">Ajuste kcal/día (+/-)
-        <input type="number" formControlName="goalKcal" placeholder="p.ej. 300">
+      <label *ngIf="showDelta">{{ 'CALC.GOAL_DELTA' | translate }}
+        <input type="number" formControlName="goalKcal" placeholder="{{ 'CALC.GOAL_DELTA_PH' | translate }}">
       </label>
     </div>
 
-    <button type="submit">Calcular</button>
+    <button type="submit">{{ 'CALC.SUBMIT' | translate }}</button>
   </form>
 </div>
 

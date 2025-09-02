@@ -1,0 +1,20 @@
+{
+  "CALC": {
+    "TITLE": "Calculadora de Kcal con Pasos",
+    "SEX": "Sexo",
+    "SEX_MALE": "Hombre",
+    "SEX_FEMALE": "Mujer",
+    "AGE": "Edad",
+    "HEIGHT": "Altura (cm)",
+    "WEIGHT": "Peso (kg)",
+    "STEPS": "Pasos diarios",
+    "STEP_INTENSITY": "Intensidad de pasos",
+    "ACTIVITY_FACTOR": "Factor de actividad (sin paseos)",
+    "GOAL": "Objetivo",
+    "GOAL_DEF": "Déficit",
+    "GOAL_MAINT": "Mantenimiento",
+    "GOAL_SUR": "Superávit",
+    "GOAL_DELTA": "Ajuste kcal/día (+/-)",
+    "SUBMIT": "Calcular"
+  }
+}

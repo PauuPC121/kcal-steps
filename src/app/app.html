@@ -1,9 +1,8 @@
+<select #langSel (change)="changeLang(langSel.value)">
+  <option *ngFor="let l of ['en','es','fr','de','it','pt','ru','zh']" [value]="l">
+    {{ l }}
+  </option>
+</select>
 
-
-<main style="max-width:900px;margin:16px auto;padding:0 16px">
-  <app-calculator></app-calculator>
-</main>
-
-<footer style="text-align:center;opacity:.7;padding:12px 0">
-  © {{ year }} Kcal + Pasos
-</footer>
+<h1>{{ 'CALC.TITLE' | translate }}</h1>
+<app-calculator></app-calculator>

@@ -6,11 +6,12 @@ import { CalculatorService } from '../../services/calculator';
 import { UserInput } from '../../models/user-input.model';
 import { Results } from '../../models/results.model';
 import { AdSlotComponent } from '../ads/ad-slot/ad-slot';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-calculator',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, ResultsComponent, AdSlotComponent],
+  imports: [CommonModule, ReactiveFormsModule, TranslateModule, ResultsComponent, AdSlotComponent],
   templateUrl: './calculator.html',
   styleUrls: ['./calculator.scss']
 })

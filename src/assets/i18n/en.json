@@ -1,0 +1,20 @@
+{
+  "CALC": {
+    "TITLE": "Kcal + Steps Calculator",
+    "SEX": "Sex",
+    "SEX_MALE": "Male",
+    "SEX_FEMALE": "Female",
+    "AGE": "Age",
+    "HEIGHT": "Height (cm)",
+    "WEIGHT": "Weight (kg)",
+    "STEPS": "Daily steps",
+    "STEP_INTENSITY": "Steps intensity",
+    "ACTIVITY_FACTOR": "Activity factor (excluding walks)",
+    "GOAL": "Goal",
+    "GOAL_DEF": "Deficit",
+    "GOAL_MAINT": "Maintenance",
+    "GOAL_SUR": "Surplus",
+    "GOAL_DELTA": "Daily kcal adjustment (+/-)",
+    "SUBMIT": "Calculate"
+  }
+}
