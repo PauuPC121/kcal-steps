@@ -1,13 +1,13 @@
 <div class="card">
   <h3>Resultados</h3>
   <div class="rows">
-    <div><span>BMR</span><strong>{{ data.bmr }} kcal</strong></div>
-    <div><span>TDEE (sin pasos)</span><strong>{{ data.tdeeSinPasos }} kcal</strong></div>
-    <div><span>kcal por pasos</span><strong>+{{ data.kcalPasos }} kcal</strong></div>
-    <div class="total"><span>TDEE total</span><strong>{{ data.tdeeFinal }} kcal</strong></div>
-    <div class="target"><span>Objetivo diario</span><strong>{{ data.targetCalories }} kcal</strong></div>
-    <div><span>Proteína (1.6–2.2 g/kg)</span>
-      <strong>{{ data.proteinTargetG[0] }}–{{ data.proteinTargetG[1] }} g/día</strong>
+    <div><span>{{'BMR'|translate}}</span><strong>{{ data.bmr }} kcal</strong></div>
+    <div><span>{{'TDEE (sin pasos)'|translate}}</span><strong>{{ data.tdeeSinPasos }} kcal</strong></div>
+    <div><span>{{'kcal por pasos'|translate}}</span><strong>+{{ data.kcalPasos }} kcal</strong></div>
+    <div class="total"><span>{{'TDEE total'|translate}}</span><strong>{{ data.tdeeFinal }} kcal</strong></div>
+    <div class="target"><span>{{'Objetivo diario'|translate}}</span><strong>{{ data.targetCalories }} kcal</strong></div>
+    <div><span>{{'Proteína (1.6–2.2 g/kg)'|translate}}</span>
+      <strong>{{ data.proteinTargetG[0] }}–{{ data.proteinTargetG[1] }} {{'g/día'|translate}}</strong>
     </div>
   </div>
 </div>

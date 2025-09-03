@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import { Results } from '../../models/results.model';
 import { ProteinSuggestionsComponent } from '../protein-suggestions/protein-suggestions';
 import { AdSlotComponent } from '../ads/ad-slot/ad-slot';
+import { TranslateModule } from '@ngx-translate/core';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-results',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ReactiveFormsModule, TranslateModule],
   templateUrl: './results.html',
   styleUrls: ['./results.scss']
 })
